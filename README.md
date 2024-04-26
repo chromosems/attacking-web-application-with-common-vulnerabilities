@@ -23,69 +23,27 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 
 ## Steps
 1. Finding subdomain  with Asset finder
+      First installed the assetfinder from github to pc 
    <img width="434" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/a4f99347-8c8a-4b04-bd7d-7cefeb3717fd">
-   roote kali 
-'home/brothersbeard 
-# asset finder 
-tesIa.com 
-tesla.com 
-link.testa.com 
-fleet-streaming-apt. prd . vn . cloud . testa.com 
-electrocars. io 
-. corn 
-Proteus-apt . prd .euwl . vn. cloud . testa.com 
-hatemsot unan. dev 
-shop.testa.com 
-ownership.tesla.com 
-auth.testa.com 
-aptgateway-hrosappapt-stg.testa.com 
-.pll.a.tesla.com.cn 
-blockchain. sen-pai. 
-ts.la 
-dpuft-eng . usw2. vn. cloud . testa.com 
-ir.tesla.com 
-telsa-sales-el.com 
-testa . wet ovedtsney . net 
-maarsenergies.com 
-getfsd. corn 
-troop-testa . web . app 
-apacvpnl.tesla.com 
-teslakort 
-testa .32etnstructors . org 
-suppliers . testarnotors . corn 
-aptgateway-gttx-stg-materials.testa.com 
-. teslakorttng.nl 
-. you.vitlas 
-serviceone. testa.cn 
-admin. me 
-eu-tesla.com 
-test a-ma. pt 
-npunav-eng . usw2.vn.cloud.tesIa.com 
-tesla-us.com 
-tes lapowerwal 13. shspower. corn 
-ap tgateway-ehsenvtronment . testa.com 
-apexrentalsinc.com 
-etrack@1.com 
-pay . tesla . corn 
-. hatemsol iman. dev 
-feedback. testa . com 
-login. rnicrosoftonttne.corn 
-apacvpn.testa.com 
-cnvpn.tesla.com 
-cnvpnl. testa. corn 
-corn 
-mta2. email.tesla.com 
-email I. testa. corn 
-corn 
-click. emails . tesla.com 
-Nita.emails.testa.com 
-mta2.emails.testa.com 
-mta3. emails.testa.com 
-mta4.emails.tesla.com 
-view.emails.tesla.com 
-events . testa. corn 
-external-3pl-prd.testa.com 
-external -automation tesLa.com 
+2. Next i was able to run assetfinder with the domain name tesla.com which is open for bounty hunting and the results given show all tesla.com related sites
+    <img width="417" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/f0e72933-9122-432b-aafb-338a7155ca6d">
+3.  creating a file to store the above info of tesla subdomain thuus tesla-subs.txt
+     <img width="436" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/8a63a6ff-3c22-47b7-802b-32d1c08c3f8f">
+4. Creating a file called run.sh to enhance automation based on finding the subdomain after creating and modifiying it, will run it with command chmod +x run.sh which will collect subdomains under url /recon/final.txt which was created by run.sh code
+   <img width="434" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/8fc0a877-92dc-4076-9274-24202f27ed44">
+   the run.sh file with code
+    <img width="433" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/122132db-7d32-4368-bddd-f739a70ae9d8">
+    Notice i run the run.sh through tesla.com website it gives a massagge of harvesting which is generated from run.sh and in the background it creates a URL recon/final.txt where the new harvested subdomains are stored.
+   <img width="430" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/62c13086-d5a8-4bc7-a3b0-799bb3034747">
+   Now you can view the output
+   <img width="428" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/c8bb1f0a-b0c1-46ed-965b-87f908dc573e">
+   to view the file, call the cat command
+   <img width="251" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/eff38785-41ee-47b5-861a-1899e726eedf">
+
+
+
+
+
 
    
 
