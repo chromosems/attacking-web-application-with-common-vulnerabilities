@@ -1,4 +1,4 @@
-# ATTACKING WEB APPLICATIONS WITH COOMMON VULNERABILITIES
+# ATTACKING WEB APPLICATION WITH COMMMON VULNERABILITIES
 
 ## Objective
 To simulate real-world scenarios and enhance proficiency in identifying and exploiting common vulnerabilities in web applications, thereby strengthening defensive strategies and fostering a proactive security posture
@@ -6,7 +6,7 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 
 ### Skills Learned
 - Finding subdomian with asset finder.
-- XXS Cross site scripting (dom,store and reflected.
+- XXS Cross site scripting (dom,store and reflected).
 - SQL injection using Union select and blind.
 - Command injection.
 - Insecure file Uploads.
@@ -57,6 +57,16 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - <img width="572" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/fa82d52e-a208-4dc3-baab-0dfb68dee9ce">
 - The output thhrows a notification thus a good sign of reliability to attack
 - <img width="594" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/55760d97-6872-4f89-a27a-04fe6931234f">
+## Steps :  SQL Injection
+- To begin with SQL injection, 1=1 is a statement that will always RESULT true therefore i started with to call for all the data in the database.
+-<img width="439" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d420faea-63ca-4af1-82d4-f62d9bcefdf1">
+- Union select is used to combine statements into one and in this case, i called jeremy a cross various tables in the database
+- <img width="396" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d4866c88-0c66-4289-b7fa-d63c76c5a88c">
+- Similarly, I alsoo called the coloumn names from the tables
+- <img width="520" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/44dc437e-9b24-4f01-89dd-775e4f1cc898">
+
+
+
 
 
 
