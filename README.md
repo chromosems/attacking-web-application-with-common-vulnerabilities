@@ -7,7 +7,7 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 ### Skills Learned
 - Finding subdomian with asset finder.
 - XXS Cross site scripting (dom,store and reflected.
-- SQL  injection using Union select and blind.
+- SQL injection using Union select and blind.
 - Command injection.
 - Insecure file Uploads.
 - Brute force
@@ -21,8 +21,7 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - Hydra which i used for cracking hashes from userstable in the database
 - ffuf which aided cracking passwords as another option
 
-## Steps
-- Finding subdomain  with Asset finder
+## Steps :  Finding subdomain  with Asset finder
 -  First installed the assetfinder from github to pc
 -  <img width="434" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/a4f99347-8c8a-4b04-bd7d-7cefeb3717fd">
 - Next i was able to run assetfinder with the domain name tesla.com which is open for bounty hunting and the results given show all tesla.com related sites
@@ -40,6 +39,20 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - <img width="428" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/c8bb1f0a-b0c1-46ed-965b-87f908dc573e">
 - To view the file, call the cat command
 - <img width="251" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/eff38785-41ee-47b5-861a-1899e726eedf">
+
+## Steps :  XXS Cross site scripting: DOM
+- To identify the xxs type, i used the website source code to if any requests were available and returning from the server
+- <img width="519" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/436e8b34-090c-4a9f-9440-651a4b2b29fe">
+- Next, running a basic script to check for output and return thus <script>prompt(1)</script> and that didnt work
+- <img width="496" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/54c1882e-008a-4b22-888b-52f323ccbf66">
+- will now try to uplaod an image using <img src=x onerror="prompt(1)">
+- <img width="551" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/90e724de-8263-40d4-abd0-cfafd75aecbe">
+- ones it runs the image fails to load however i got a notification implying liability to an attack
+- <img width="588" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/ecedf04e-fabd-44d6-b712-32de69c38843">
+
+## Steps :  XXS Cross site scripting: Stored
+
+
 
 
 
