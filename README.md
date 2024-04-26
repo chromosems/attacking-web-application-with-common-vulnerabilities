@@ -57,13 +57,36 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - <img width="572" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/fa82d52e-a208-4dc3-baab-0dfb68dee9ce">
 - The output thhrows a notification thus a good sign of reliability to attack
 - <img width="594" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/55760d97-6872-4f89-a27a-04fe6931234f">
-## Steps :  SQL Injection
+## Steps :  SQL Injection Union select
 - To begin with SQL injection, 1=1 is a statement that will always RESULT true therefore i started with to call for all the data in the database.
 -<img width="439" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d420faea-63ca-4af1-82d4-f62d9bcefdf1">
 - Union select is used to combine statements into one and in this case, i called jeremy a cross various tables in the database
 - <img width="396" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d4866c88-0c66-4289-b7fa-d63c76c5a88c">
 - Similarly, I alsoo called the coloumn names from the tables
 - <img width="520" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/44dc437e-9b24-4f01-89dd-775e4f1cc898">
+
+## Steps :  SQL Injection (Blind)
+- In this case both the username and password are given
+-<img width="631" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/6dc83893-74ba-44a2-b54b-0d611d949abe">
+- Using burpsuite, i was able to identify the Post request, set cookies and username and password which i used to attempt to login
+- <img width="328" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d007a83e-7c30-4e0b-9420-12c1183f85af">
+- Its important to notice the welcome page as well as the content length of the page
+- <img width="214" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/15024120-7c29-417d-bd66-4b1790ee4717">
+- To begin the injection tests, i sent the post request to repeater and what reapeater does is to lets modify comparisons as requests are sent. for example here i did change the password , however its important to watch out for the content length as it determines if its sucessful or invalid and in this case, my experiment was invalid
+- <img width="372" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/6c80e89b-c315-4c4c-aeb0-465172723f5f">
+- <img width="283" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/e57043e7-934b-4e6e-8dbc-13b1638c5c5c">
+- To enhance the attack, i did basic check by encoding the username coresponding with the password
+- <img width="304" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/7826a912-827b-4511-8cca-58218d6c6ae5">
+- at the sametime i also created a request.txt file of the RAW, which i was able to run usingg sqlmap which showed both username and password are not injectable
+- <img width="254" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/1aa60218-8b78-48c8-aba3-53c2010a5ff8">
+- <img width="365" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/f7eb3fa4-6a5d-4b16-ad1a-e95dedd7a2b9">
+- 
+
+
+
+
+
+
 
 
 
