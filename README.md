@@ -43,7 +43,7 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 ## Steps :  XXS Cross site scripting: DOM
 - To identify the xxs type, i used the website source code to if any requests were available and returning from the server
 - <img width="519" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/436e8b34-090c-4a9f-9440-651a4b2b29fe">
-- Next, running a basic script to check for output and return thus <script>prompt(1)</script> and that didnt work
+- Next, running a basic script to check for output and return thus script(open) prompt(1) script(close) and that didnt work
 - <img width="496" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/54c1882e-008a-4b22-888b-52f323ccbf66">
 - will now try to uplaod an image using <img src=x onerror="prompt(1)">
 - <img width="551" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/90e724de-8263-40d4-abd0-cfafd75aecbe">
@@ -51,6 +51,14 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - <img width="588" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/ecedf04e-fabd-44d6-b712-32de69c38843">
 
 ## Steps :  XXS Cross site scripting: Stored
+- Pro tip, whenever testing for XXS its significant to test HTML injection and in this case, we test if the header test will be returned thus html injection applicable iin this case as it gives feedback
+- <img width="390" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/fa6ebbd9-e885-44b9-8cc7-68df9114b65d">
+- Next , am exploring the vulnerability
+- <img width="572" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/fa82d52e-a208-4dc3-baab-0dfb68dee9ce">
+- The output thhrows a notification thus a good sign of reliability to attack
+- <img width="594" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/55760d97-6872-4f89-a27a-04fe6931234f">
+
+
 
 
 
