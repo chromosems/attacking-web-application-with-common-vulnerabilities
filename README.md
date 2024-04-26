@@ -80,7 +80,18 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - at the sametime i also created a request.txt file of the RAW, which i was able to run usingg sqlmap which showed both username and password are not injectable
 - <img width="254" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/1aa60218-8b78-48c8-aba3-53c2010a5ff8">
 - <img width="365" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/f7eb3fa4-6a5d-4b16-ad1a-e95dedd7a2b9">
-- 
+- Now , solution here is using session cookies, therefore if anyy letter is added to session cookies, the content length changes and you wont find a macth of the home page
+- <img width="247" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/7bbf0460-5d19-4f04-8183-3ce6052cdc08">
+- To resolve the conflict, i used the 1=1 alway true statement hence adding the statement to session cookies
+- <img width="308" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/12c30704-68d0-428a-8593-8ef4491f509f">
+- Next, was using substrings in substitute to the above and it works perfectly
+- <img width="289" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/0c500d64-ba35-492f-8d52-7bcede2f26e8">
+- finding the version of the database using substring, works perfectly as well
+- <img width="400" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/7bf4d13c-735e-4e5d-997c-286b960c50cc">
+
+
+
+
 
 
 
