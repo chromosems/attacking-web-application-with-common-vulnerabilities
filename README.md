@@ -31,14 +31,14 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 7.  <img width="436" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/8a63a6ff-3c22-47b7-802b-32d1c08c3f8f">
 8. Creating a file called run.sh to enhance automation based on finding the subdomain after creating and modifiying it, will run it with command chmod +x run.sh which will collect subdomains under url /recon/final.txt which was created by run.sh code
 9. <img width="434" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/8fc0a877-92dc-4076-9274-24202f27ed44">
-10.Run the run.sh file
-11.<img width="433" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/122132db-7d32-4368-bddd-f739a70ae9d8">
-12.Notice i run the run.sh through tesla.com website it gives a massagge of harvesting which is generated from run.sh and in the background it creates a URL recon/final.txt where the new harvested subdomains are stored.
-13.<img width="430" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/62c13086-d5a8-4bc7-a3b0-799bb3034747">
-14.Now you can view the output
-15.<img width="428" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/c8bb1f0a-b0c1-46ed-965b-87f908dc573e">
-16.To view the file, call the cat command
-17.<img width="251" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/eff38785-41ee-47b5-861a-1899e726eedf">
+Run the run.sh file
+<img width="433" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/122132db-7d32-4368-bddd-f739a70ae9d8">
+Notice i run the run.sh through tesla.com website it gives a massagge of harvesting which is generated from run.sh and in the background it creates a URL recon/final.txt where the new harvested subdomains are stored.
+<img width="430" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/62c13086-d5a8-4bc7-a3b0-799bb3034747">
+Now you can view the output
+<img width="428" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/c8bb1f0a-b0c1-46ed-965b-87f908dc573e">
+To view the file, call the cat command
+<img width="251" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/eff38785-41ee-47b5-861a-1899e726eedf">
 
 
 
