@@ -17,11 +17,11 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - Asset finder for finding subdomain
 - local website lab for xxs,MFA,bruteforce,Insecure uploads.
 - Burpsuite for identifying POST request,bruteforce attacks from localhost and SQLmap  for SQL injection.
-- https://appsecexplained.gitbook.io/appsecexplained/common-vulns/injection/command-injection  a reffernce book for injections
-- Hydra which i used for cracking hashes from userstable in the database
-- ffuf which aided cracking passwords as another option
+- https://appsecexplained.gitbook.io/appsecexplained/common-vulns/injection/command-injection  a reference book for injections
+- Hydra  used for cracking hashes from users-table in the database
+- Ffuf which aided cracking passwords as another option
 
-## Steps :  Finding subdomain  with Asset finder
+## Steps :  Finding subdomain  with Assetfinder
 -  First installed the assetfinder from github to pc
 -  <img width="434" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/a4f99347-8c8a-4b04-bd7d-7cefeb3717fd">
 - Next i was able to run assetfinder with the domain name tesla.com which is open for bounty hunting and the results given show all tesla.com related sites
