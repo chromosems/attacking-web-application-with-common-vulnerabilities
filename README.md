@@ -106,7 +106,7 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 -  <img width="298" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/e3a07efb-9ee0-4263-aec5-1e6fa5e13d91">
 - <img width="327" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/519c3e04-73b5-4cf1-981b-4e7bc02428d7">
 - <img width="292" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/830d3623-d45c-43a5-9a60-c45916cb5402">
-<img width="291" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/6c9ae258-601f-4f46-80fc-e1918824e7e5">
+- <img width="291" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/6c9ae258-601f-4f46-80fc-e1918824e7e5">
 
 
 
