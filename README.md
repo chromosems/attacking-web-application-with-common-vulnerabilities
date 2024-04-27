@@ -67,7 +67,7 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 
 ## Steps :  SQL Injection (Blind)
 - In this case both the username and password are given
--<img width="631" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/6dc83893-74ba-44a2-b54b-0d611d949abe">
+- <img width="631" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/6dc83893-74ba-44a2-b54b-0d611d949abe">
 - Using burpsuite, i was able to identify the Post request, set cookies and username and password which i used to attempt to login
 - <img width="328" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d007a83e-7c30-4e0b-9420-12c1183f85af">
 - Its important to notice the welcome page as well as the content length of the page
@@ -80,29 +80,29 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - Similarly , created a request.txt file of RAW, which I was able to run using sqlmap which showed both username and password as non injectable
 - <img width="254" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/1aa60218-8b78-48c8-aba3-53c2010a5ff8">
 - <img width="365" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/f7eb3fa4-6a5d-4b16-ad1a-e95dedd7a2b9">
-- Now , solution here is using session cookies, therefore if anyy letter is added to session cookies, the content length changes and you wont find a macth of the home page
+- Thw solution here was using session cookies, therefore if any letter is added to session cookies, the content length changes and you wont find a match of the home page
 - <img width="247" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/7bbf0460-5d19-4f04-8183-3ce6052cdc08">
-- To resolve the conflict, i used the 1=1 alway true statement hence adding the statement to session cookies
+- To resolve the conflict, i used the 1=1 (alway true statement) hence adding the statement to session cookies
 - <img width="308" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/12c30704-68d0-428a-8593-8ef4491f509f">
 - Next, was using substrings in substitute to the above and it works perfectly
 - <img width="289" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/0c500d64-ba35-492f-8d52-7bcede2f26e8">
-- finding the version of the database using substring, works perfectly as well
+- Finding the version of the database using substring, works perfectly as well
 - <img width="400" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/7bf4d13c-735e-4e5d-997c-286b960c50cc">
 
 
 ## Steps :  Command Injection
 
-- A refference book  i used here was appsecexplained https://appsecexplained.gitbook.io/appsecexplained/common-vulns/injection/command-injection thus some injection commands begin with ;ls -la etc, in this case i run a  website through the lab and try to pop a shell by performing a grep based on whoami or hostname of the website
+- A reference book  I used here was appsecexplained https://appsecexplained.gitbook.io/appsecexplained/common-vulns/injection/command-injection thus some injection commands begin with ;ls -la etc, in this case i run a website through the lab and try to pop a shell by performing a grep based on whoami or hostname of the website
 - <img width="480" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d60a1549-2177-4745-8298-890e348d9b43">
 - At this point, its not providing the whoami information therefore adding http echo will call out the required data
 - <img width="459" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/990d74c7-ab5c-497a-b9ca-e38d0c89304a">
-- Next filter the view to only  whoami  by using asd for output
+- Next filtering the view to only  whoami  by using asd for output
 - <img width="309" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/4fa4593f-b8bd-4f91-a8bb-bccdeef55bfb">
--  i went a head to pop a shell thus had to identify the bash with (bash;asd). with the help of reverse shell cheatsheet https://swisskyrepo.github.io/InternalAllTheThings/cheatsheets/shell-reverse-cheatsheet/#bash-tcp  annd found this bash
+- Poping a shell identify the bash with (bash;asd). and  reverse shell cheatsheet https://swisskyrepo.github.io/InternalAllTheThings/cheatsheets/shell-reverse-cheatsheet/#bash-tcp  finding this bash
 -  <img width="312" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/1dc42dbb-cab5-40c0-b088-4affc35e14b4">
-- then set up a listening port
+- Then setting up a listening port
 - <img width="305" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/e9f5a4ea-3ec2-4dc0-80c5-108fcd81481a">
-- Using php reverse from reverseshell cheatsheet to pop a shell connected to the port listening, furthermore update the ip and port to match my personal network and the shell was poped succesfully
+- Using php reverse from reverseshell cheatsheet to pop a shell connected to  port listening and updated the ip and port to match my personal network and the shell was succesfull
 -  <img width="298" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/e3a07efb-9ee0-4263-aec5-1e6fa5e13d91">
 - <img width="327" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/519c3e04-73b5-4cf1-981b-4e7bc02428d7">
 - <img width="292" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/830d3623-d45c-43a5-9a60-c45916cb5402">
