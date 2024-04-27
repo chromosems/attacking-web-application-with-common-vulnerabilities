@@ -41,28 +41,28 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - <img width="251" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/eff38785-41ee-47b5-861a-1899e726eedf">
 
 ## Steps :  XXS Cross site scripting: DOM
-- To identify the xxs type, I used the website source code to if any requests were available and returning from the server
+- To identify the xxs type, I used the website source code to check if any requests were available and returning from the server
 - <img width="519" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/436e8b34-090c-4a9f-9440-651a4b2b29fe">
-- Next, running a basic script to check for output and return thus script(open) prompt(1) script(close) and that didnt work
+- Next, running a basic script to check for output and return thus script(open) prompt(1) script(close) 
 - <img width="496" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/54c1882e-008a-4b22-888b-52f323ccbf66">
-- will now try to uplaod an image using <img src=x onerror="prompt(1)">
+- I then uploaded an image using <img src=x onerror="prompt(1)">
 - <img width="551" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/90e724de-8263-40d4-abd0-cfafd75aecbe">
-- ones it runs the image fails to load however i got a notification implying liability to an attack
+-  The image failed to load however I got a notification implying liability to an attack
 - <img width="588" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/ecedf04e-fabd-44d6-b712-32de69c38843">
 
 ## Steps :  XXS Cross site scripting: Stored
-- Pro tip, whenever testing for XXS its significant to test HTML injection and in this case, we test if the header test will be returned thus html injection applicable iin this case as it gives feedback
+- Pro tip, whenever testing for XXS its significant to test HTML injection and in this case, we test if the header test will be returned thus html injection applicable in this case as it gives feedback
 - <img width="390" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/fa6ebbd9-e885-44b9-8cc7-68df9114b65d">
-- Next , am exploring the vulnerability
+- Next , exploring the vulnerability
 - <img width="572" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/fa82d52e-a208-4dc3-baab-0dfb68dee9ce">
-- The output thhrows a notification thus a good sign of reliability to attack
+- The output throws a notification an implication of liability to attack
 - <img width="594" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/55760d97-6872-4f89-a27a-04fe6931234f">
 ## Steps :  SQL Injection Union select
-- To begin with SQL injection, 1=1 is a statement that will always RESULT true therefore i started with to call for all the data in the database.
+- To begin with SQL injection, 1=1 is a statement that will always RESULT true therefore i started with it to call for all the data in the database.
 - <img width="439" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d420faea-63ca-4af1-82d4-f62d9bcefdf1">
-- Union select is used to combine statements into one and in this case, i called jeremy a cross various tables in the database
+- Union select is used to combine statements into one and in this case, called jeremy among various tables in the database
 - <img width="396" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d4866c88-0c66-4289-b7fa-d63c76c5a88c">
-- Similarly, I alsoo called the coloumn names from the tables
+- Similarly, I also called the column names from the tables
 - <img width="520" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/44dc437e-9b24-4f01-89dd-775e4f1cc898">
 
 ## Steps :  SQL Injection (Blind)
@@ -72,12 +72,12 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - <img width="328" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d007a83e-7c30-4e0b-9420-12c1183f85af">
 - Its important to notice the welcome page as well as the content length of the page
 - <img width="214" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/15024120-7c29-417d-bd66-4b1790ee4717">
-- To begin the injection tests, i sent the post request to repeater and what reapeater does is to lets modify comparisons as requests are sent. for example here i did change the password , however its important to watch out for the content length as it determines if its sucessful or invalid and in this case, my experiment was invalid
+- To begin the injection tests, a post request was sent to repeater and  reapeater enables modification of comparisons as requests are sent. for example I change the password , however its important to watch out for the content length as it determines if its sucess or validity and in this case,  experiment was invalid
 - <img width="372" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/6c80e89b-c315-4c4c-aeb0-465172723f5f">
 - <img width="283" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/e57043e7-934b-4e6e-8dbc-13b1638c5c5c">
-- To enhance the attack, i did basic check by encoding the username coresponding with the password
+- To enhance the attack, performing checks by encoding the username coresponding with the password
 - <img width="304" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/7826a912-827b-4511-8cca-58218d6c6ae5">
-- at the sametime i also created a request.txt file of the RAW, which i was able to run usingg sqlmap which showed both username and password are not injectable
+- Similarly , created a request.txt file of RAW, which I was able to run using sqlmap which showed both username and password as non injectable
 - <img width="254" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/1aa60218-8b78-48c8-aba3-53c2010a5ff8">
 - <img width="365" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/f7eb3fa4-6a5d-4b16-ad1a-e95dedd7a2b9">
 - Now , solution here is using session cookies, therefore if anyy letter is added to session cookies, the content length changes and you wont find a macth of the home page
