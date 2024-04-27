@@ -90,6 +90,29 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - <img width="400" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/7bf4d13c-735e-4e5d-997c-286b960c50cc">
 
 
+## Steps :  Command Injection
+
+- A refference book  i used here was appsecexplained https://appsecexplained.gitbook.io/appsecexplained/common-vulns/injection/command-injection thus some injection commands begin with ;ls -la etc, in this case i run a  website through the lab and try to pop a shell by performing a grep based on whoami or hostname of the website
+- <img width="480" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d60a1549-2177-4745-8298-890e348d9b43">
+- At this point, its not providing the whoami information therefore adding http echo will call out the required data
+- <img width="459" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/990d74c7-ab5c-497a-b9ca-e38d0c89304a">
+- Next filter the view to only  whoami  by using asd for output
+- <img width="309" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/4fa4593f-b8bd-4f91-a8bb-bccdeef55bfb">
+-  i went a head to pop a shell thus had to identify the bash with (bash;asd). with the help of reverse shell cheatsheet https://swisskyrepo.github.io/InternalAllTheThings/cheatsheets/shell-reverse-cheatsheet/#bash-tcp  annd found this bash
+-  <img width="312" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/1dc42dbb-cab5-40c0-b088-4affc35e14b4">
+- then set up a listening port
+- <img width="305" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/e9f5a4ea-3ec2-4dc0-80c5-108fcd81481a">
+- Using php reverse from reverseshell cheatsheet to pop a shell connected to the port listening, furthermore update the ip and port to match my personal network and the shell was poped succesfully
+-  <img width="298" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/e3a07efb-9ee0-4263-aec5-1e6fa5e13d91">
+- <img width="327" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/519c3e04-73b5-4cf1-981b-4e7bc02428d7">
+- <img width="292" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/830d3623-d45c-43a5-9a60-c45916cb5402">
+<img width="291" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/6c9ae258-601f-4f46-80fc-e1918824e7e5">
+
+
+
+
+
+
 
 
 
