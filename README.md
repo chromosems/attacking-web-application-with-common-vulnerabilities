@@ -59,7 +59,7 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 - <img width="594" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/55760d97-6872-4f89-a27a-04fe6931234f">
 ## Steps :  SQL Injection Union select
 - To begin with SQL injection, 1=1 is a statement that will always RESULT true therefore i started with to call for all the data in the database.
--<img width="439" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d420faea-63ca-4af1-82d4-f62d9bcefdf1">
+- <img width="439" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d420faea-63ca-4af1-82d4-f62d9bcefdf1">
 - Union select is used to combine statements into one and in this case, i called jeremy a cross various tables in the database
 - <img width="396" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/d4866c88-0c66-4289-b7fa-d63c76c5a88c">
 - Similarly, I alsoo called the coloumn names from the tables
