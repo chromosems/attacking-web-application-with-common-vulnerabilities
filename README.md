@@ -24,7 +24,7 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 ## Steps :  Finding subdomain  with Assetfinder
 -  First installed the assetfinder from github to pc
 -  <img width="434" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/a4f99347-8c8a-4b04-bd7d-7cefeb3717fd">
-- Next i was able to run assetfinder with the domain name tesla.com which is open for bounty hunting and the results given show all tesla.com related sites
+- Next  was setting assetfinder with the domain name tesla.com which is open for bounty hunting and the results given show all tesla.com related sites
 - <img width="417" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/f0e72933-9122-432b-aafb-338a7155ca6d">
 - creating a file to store the above info of tesla subdomain thus tesla-subs.txt
 - <img width="436" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/8a63a6ff-3c22-47b7-802b-32d1c08c3f8f">
@@ -43,9 +43,9 @@ To simulate real-world scenarios and enhance proficiency in identifying and expl
 ## Steps :  XXS Cross site scripting: DOM
 - To identify the xxs type, I used the website source code to check if any requests were available and returning from the server
 - <img width="519" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/436e8b34-090c-4a9f-9440-651a4b2b29fe">
-- Next, running a basic script to check for output and return thus script(open) prompt(1) script(close) 
+- Next, running a basic script to check for output and return thus script. 
 - <img width="496" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/54c1882e-008a-4b22-888b-52f323ccbf66">
-- I then uploaded an image using <img src=x onerror="prompt(1)">
+- I then uploaded an image using img src=x onerror="prompt(1)"
 - <img width="551" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/90e724de-8263-40d4-abd0-cfafd75aecbe">
 -  The image failed to load however I got a notification implying liability to an attack
 - <img width="588" alt="image" src="https://github.com/chromosems/attacking-web-application-with-common-vulnerabilities/assets/44053943/ecedf04e-fabd-44d6-b712-32de69c38843">
